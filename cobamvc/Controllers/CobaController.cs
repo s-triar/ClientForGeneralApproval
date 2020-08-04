@@ -65,8 +65,8 @@ namespace cobamvc.Controllers
                 projectName ="Monitoring Dana Investasi Franchise",
                 status ="Menunggu Approval",
                 title = "MOU Toko Baru telah dibuat",
-                urlAction = "https://localhost:44305/Coba/Approve",
-                urlProject = "https://localhost:44305",
+                urlAction = "http://localhost/cb/Coba/Approve",
+                urlProject = "http://localhost/cb",//"http://localhost:44305",
                 dataNotif = new NotifConfig
                 {
                     title = "Monitoring Dana Investasi Franchise",
@@ -263,7 +263,8 @@ namespace cobamvc.Controllers
             var img = new FormImage
             {
                 label = "Coba menampilkan gambar",
-                link = "https://localhost:44305/Docs/cc.jpg", //this cobamvc url
+                //link = "https://localhost:44305/Docs/cc.jpg", //this cobamvc url
+                link = "http://localhost/cb/Docs/cc.jpg", //this cobamvc url
                 fileName = "cc.jpg"
             };
             res.Add(img);
@@ -274,7 +275,8 @@ namespace cobamvc.Controllers
                     {
                         fileName ="xel.xlsx",
                         label ="xel",
-                        link = "https://localhost:44305/Docs/xel.xlsx",  //this cobamvc url
+                        //link = "https://localhost:44305/Docs/xel.xlsx",  //this cobamvc url
+                        link = "http://localhost/cb/Docs/xel.xlsx",  //this cobamvc url
                         typeDoc = "application/vnd.openxmlformatsofficedocument.spreadsheetml.sheet"
                     }
                 );
@@ -282,7 +284,8 @@ namespace cobamvc.Controllers
             {
                 fileName = "xel.xlsx",
                 label = "xel dari method",
-                link = "https://localhost:44305/Coba/GetFile?filename=xel.xlsx",  //this cobamvc url
+                //link = "https://localhost:44305/Coba/GetFile?filename=xel.xlsx",  //this cobamvc url
+                link = "http://localhost/cb/Coba/GetFile?filename=xel.xlsx",  //this cobamvc url
                 typeDoc = "application/vnd.openxmlformatsofficedocument.spreadsheetml.sheet"
             });
 
@@ -298,7 +301,8 @@ namespace cobamvc.Controllers
                 label = "Ini tuh Auto complete",
                 provideFilter = false,
                 name = "autoco",
-                link = "https://localhost:44305/Coba/DataAutoComplete",
+                //link = "https://localhost:44305/Coba/DataAutoComplete",
+                link = "http://localhost/cb/Coba/DataAutoComplete",
             };
             res.Add(au);
 
